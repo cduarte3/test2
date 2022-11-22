@@ -19,6 +19,23 @@ module.exports. init = function (){
 
 module.exports. getBSD = function (){
     return new Promise(function(resolve, reject){
+        let bsd = [];
+        if(students.length > 0){
+            for(i = 0; i < students.length;i++){
+                if(students[i].program == "BSD"){
+                   bsd.push(students[i]);
+                }
+            }
+            resolve(bsd);
+        }
+        else{
+            reject("unable to read file");
+        }
+    })
+}
+
+module.exports. allStudents = function (){
+    return new Promise(function(resolve, reject){
         if(students.length > 0){
             resolve(students);
         }

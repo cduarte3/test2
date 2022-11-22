@@ -1,0 +1,30 @@
+<div>
+    <div>
+        <h2>Student List</h2>
+        <hr>
+        <table border="3px" border="solid">
+        <thead>
+            <tr>
+                <th>Student ID</th>
+                <th>Name</th>
+                <th>Program</th>
+                <th>GPA</th>
+            </tr>
+        </thead>
+        {{#each data}}
+        <tbody>
+            <tr>
+                <td>{{studId}}</td>
+                <td>{{name}}</td>
+                <td>{{program}}</td>
+                <td>{{gpa}}</td>
+            </tr>
+        </tbody>
+        {{else}}
+        <div class="col-md-12 text-center">
+            <strong>{{message}}</strong>
+        </div>
+        {{/each}}
+        </table>
+    </div> 
+</div>
