@@ -1,6 +1,6 @@
 var express = require("express");
 var app = express();
-var moduleA = require("./test2_moduleA.js");
+var moduleA = require("./test3_moduleA.js");
 const exphbs = require("express-handlebars");
 var HTTP_PORT = process.env.PORT || 8080;
 var path = require('path');
